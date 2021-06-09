@@ -1,0 +1,403 @@
+
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cửa Hàng Bánh Kẹo/ Kiểm Tra</title>
+<!-- for-mobile-apps -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Nơi Cung Cấp Bánh Kẹo Ngon Nhất Hành Tinh" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<!-- //font-awesome icons -->
+
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+</head>
+	
+<body>
+<!-- header -->
+	<div class="agileits_header">
+		<div class="w3l_offers">
+			<a href="products.html">Mỗi Ngày Là Một Món Đồ Ngọt</a>
+		</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="text" name="Product" value="Tìm Sản Phẩm" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="submit" value=" ">
+			</form>
+		</div>
+		<div class="product_list_header">  
+			<form action="#" method="post" class="last">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart" />
+                    <input type="hidden" name="display" value="1" />
+                    <input type="submit" name="submit" value="Giỏ Hàng" class="button" />
+                </fieldset>
+            </form>
+		</div>
+		<div class="w3l_header_right">
+			<ul>
+				<li class="dropdown profile_details_drop">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+							<ul class="dropdown-menu drp-mnu" id="provip">
+							</ul>
+						</div>
+						<script>
+							var obj = JSON.parse(sessionStorage.user);
+							var html = "<li><span>"+ "Người dùng: "+ obj.name +"</span></li>";
+							html += "<li><a href='login.html'>Đăng xuất</a></li>";
+							$("#provip").html(html);
+						</script>
+					</div>	
+				</li>
+			</ul>
+		</div>
+		<div class="w3l_header_right1">
+			<h2><a href="mail.html">Liên Hệ</a></h2>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+
+
+	<div class="logo_products">
+		<div class="container">
+			<div class="w3ls_logo_products_left">
+				<h1><a href="index.html"><span>Bánh Kẹo</span> E17CN2</a></h1>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="special_items">
+					<li><a href="events.html">Sự Kiện</a><i>/</i></li>
+					<li><a href="about.html">Về Chúng Tôi</a><i>/</i></li>
+					<li><a href="products.html">Sản Phẩm</a><i>/</i></li>
+					<li><a href="services.html">Dịch Vụ</a></li>
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>038-8001-410</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="E17CN2@gmail.com">E17CN2@gmai.com</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- products-breadcrumb -->
+	<div class="products-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Trang Chủ</a><span>|</span></li>
+				<li>Kiểm Tra</li>
+			</ul>
+		</div>
+	</div>
+<!-- //products-breadcrumb -->
+<!-- banner -->
+<div class="banner">
+	<div class="w3l_banner_nav_left">
+	<nav class="navbar nav_bottom">
+		 <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header nav_2">
+			  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+		   </div> 
+		   <!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+				<ul class="nav navbar-nav nav_1">
+					<li><a href="candy.html">Bánh Kẹo</a></li>
+					<li><a href="cake.html">Bánh Kem</a></li>
+				</ul>
+			 </div><!-- /.navbar-collapse -->
+		</nav>
+	</div>
+	<div class="w3l_banner_nav_right">
+<!-- about -->
+		<div class="privacy about">
+			<h3>Kiểm Tra</h3>
+			
+	      <div class="checkout-right">
+					<h4>Giỏ của bạn: <span> Sản Phẩm</span></h4>
+				<table class="timetable_sub">
+					<thead>
+						<tr>
+							<th>STT</th>
+							<th>Ảnh</th>
+							<th>Số Lượng</th>
+							<th>Tên bánh/kẹo</th>
+							<th>Giá</th>
+						</tr>
+					</thead>
+					<tbody id="tableBody">
+						<script>
+							var obj = JSON.parse(sessionStorage.CartTasty);
+							var html = '';
+							for (var i = 0; i < obj.length; i++) {
+								html += '<tr class="rem1" >';
+								html += '<td class="invert">'+i+1+'</td>' +
+										'<td class="invert-image"><a href="single.html"><img src="images/img/'+obj[i].item_name+'.jpg" alt=" " class="img-responsive"></a></td>' +
+										'<td class="invert">' +
+										'<div class="">' +
+											'<div class=""><span>'+ obj[i].quantity +'</span></div>' +
+										'</div>'+
+										'</td>' +
+										'<td class="invert">'+ obj[i].item_name+'</td>' +
+										'<td class="invert">'+ obj[i].amount+ '</td>';
+								html += '</tr>';
+							}
+							$('#tableBody').html(html);
+						</script>
+					
+
+				</tbody></table>
+			</div>
+			<div class="checkout-left">
+				<div class="col-md-8 address_form_agile">
+					  <h4>Thêm mô Tả</h4>
+				<form class="creditly-card-form agileinfo_form">
+									<section class="creditly-wrapper wthree, w3_agileits_wrapper">
+										<div class="information-wrapper">
+											<div class="first-row form-group">
+												<div class="w3_agileits_card_number_grids">
+													<div class="w3_agileits_card_number_grid_left">
+														<div class="controls">
+															<label class="control-label">Điện thoại:</label>
+														    <input class="form-control" type="text" placeholder="Số Điện Thoại" name="sdt">
+														</div>
+													</div>
+						
+													<div class="clear"> </div>
+												</div>
+												<div class="controls">
+													<label class="control-label">Địa Chỉ: </label>
+												 <input class="form-control" type="text" placeholder="Địa Chỉ" name="addr">
+												</div>
+												
+											</div>
+										</div>
+									</section>
+								</form>
+								<button id="checkoutT" class="btn btn-primary">Mua hàng ngay bây giờ
+			      				</button>
+					</div>
+			
+				<div class="clearfix"> </div>
+				
+			</div>
+
+		</div>
+<!-- //about -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+<!-- //banner -->
+
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 w3_footer_grid">
+			<h3>Thông Tin</h3>
+			<ul class="w3_footer_grid_list">
+				<li><a href="events.html">Sự Kiện</a></li>
+				<li><a href="about.html">Về Chúng Tôi</a></li>
+				<li><a href="products.html">Sản Phẩm</a></li>
+				<li><a href="services.html">Dịch Vụ</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3 w3_footer_grid">
+			<h3>policy info</h3>
+			<ul class="w3_footer_grid_list">
+				<li><a href="faqs.html">FAQ</a></li>
+				<li><a href="privacy.html">Chính Sách</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3 w3_footer_grid">
+			<h3>Cửa Hàng Có Những Gì!!</h3>
+			<ul class="w3_footer_grid_list">
+				<li><a href="cake.html".html">Bánh Ngọt</a></li>
+				<li><a href="products.html">Sản Phẩm</a></li>
+				<li><a href="orther.html">Loại Khác</a></li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+		<div class="agile_footer_grids">
+			<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+				<div class="w3_footer_grid_bottom">
+					<h4>100% Bảo Mật</h4>
+					<img src="images/card.png" alt=" " class="img-responsive" />
+				</div>
+			</div>
+			<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+				<div class="w3_footer_grid_bottom">
+					<h5>Liên Hệ Với Chúng Tôi Thông Qua</h5>
+					<ul class="agileits_social_icons">
+						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="wthree_footer_copy">
+			<p>© 2021 By E17CN2</p>
+		</div>
+	</div>
+</div>
+<!-- //footer -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+							 <!--quantity-->
+									<script>
+									$('.value-plus').on('click', function(){
+										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
+										divUpd.text(newVal);
+									});
+
+									$('.value-minus').on('click', function(){
+										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)-1;
+										if(newVal>=1) divUpd.text(newVal);
+									});
+									</script>
+								<!--quantity-->
+							<script>$(document).ready(function(c) {
+								$('.close1').on('click', function(c){
+									$('.rem1').fadeOut('slow', function(c){
+										$('.rem1').remove();
+									});
+									});	  
+								});
+						   </script>
+							<script>$(document).ready(function(c) {
+								$('.close2').on('click', function(c){
+									$('.rem2').fadeOut('slow', function(c){
+										$('.rem2').remove();
+									});
+									});	  
+								});
+						   </script>
+						  	<script>$(document).ready(function(c) {
+								$('.close3').on('click', function(c){
+									$('.rem3').fadeOut('slow', function(c){
+										$('.rem3').remove();
+									});
+									});	  
+								});
+						   </script>
+
+<!-- //js -->
+<!-- script-for sticky-nav -->
+	<script>
+	$(document).ready(function() {
+		 var navoffeset=$(".agileits_header").offset().top;
+		 $(window).scroll(function(){
+			var scrollpos=$(window).scrollTop(); 
+			if(scrollpos >=navoffeset){
+				$(".agileits_header").addClass("fixed");
+			}else{
+				$(".agileits_header").removeClass("fixed");
+			}
+		 });
+		 
+	});
+	</script>
+<!-- //script-for sticky-nav -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<script src="js/myjs/addCartAndThenCartItem.js"></script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<script src="js/minicart.js"></script>
+<script>
+		paypal.minicart.render();
+
+		paypal.minicart.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
+
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
+
+			if (total < 3) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+
+		$(document).on('click','#checkoutT', function () {
+
+			sessionStorage.setItem("CartTasty",JSON.stringify([]));
+			var objj = [];
+			localStorage.setItem("PPMiniCart",JSON.stringify(objj));
+
+		})
+
+	</script>
+</body>
+</html>
