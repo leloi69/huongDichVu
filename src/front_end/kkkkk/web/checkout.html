@@ -206,6 +206,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						for (var i = 0; i < cartTasty.length; i++) {
 							amount += cartTasty[i].amount;
 						}
+						amount = parseInt(""+(amount / 23000));
 						paypal.Button.render({
 
 							env: 'sandbox', // sandbox | production
