@@ -45,7 +45,7 @@ var Cake = (function () {
     };
 
     var getDataByCartegory = function () {
-        // if (!sessionStorage.tastyByCake) {
+        if (!sessionStorage.tastyByCake) {
             $.ajax({
                 url: 'http://localhost:8088/api/v1/tasty?category_id=2',
                 type: "GET",
@@ -61,10 +61,10 @@ var Cake = (function () {
                     console.log(error);
                 }
             });
-        // } else {
-        //     var obj = JSON.parse(sessionStorage.tastyByCake);
-        //     drawData(obj);
-        // }
+        } else {
+            var obj = JSON.parse(sessionStorage.tastyByCake);
+            drawData(obj);
+        }
     };
 
     return {

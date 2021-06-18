@@ -26,53 +26,53 @@ var AddCartAndCartItem = (function () {
                     // dataType: "json",
                     // body : data,
                     success: function(result) {
-                        alert('Đã thêm mới đơn hàng');
-                        window.location.href = 'index.html';
-                        console.log(result);
-                    },
-                    error: function(error) {
-                        console.log(error);
-                    }
-                });
-
-                $.ajax({
-                    url: 'http://localhost:8088/api/v1/cart',
-                    type: "GET",
-                    success: function(result) {
-                        if(result.length > 0) {
-                            sessionStorage.setItem("allCart",JSON.stringify(result));
-                        } else {
-                        }
-                    },
-                    error: function(error) {
-                        console.log(error);
-                    }
-                });
-                var cartId = 1;
-                var obj = JSON.parse(sessionStorage.allCart);
-                if(obj) {
-                        cartId = obj[obj.length - 1].id + 1;
-                }
-
-                if (cartTasty.length > 0) {
-                    for (var i = 0; i < cartTasty.length; i++) {
-                        var unitPrice = cartTasty[i].quantity * cartTasty[i].amount;
                         $.ajax({
-                            url: "http://localhost:8088/api/v1/cartItem",
-                            type: "post",
-                            data: JSON.stringify({ "cart_id" : cartId, "tasty_id": cartTasty[i].id, "quantities": cartTasty[i].quantity, "unit_price": unitPrice}),
-                            contentType: 'application/json',
-                            // dataType: "json",
-                            // body : data,
+                            url: 'http://localhost:8088/api/v1/cart',
+                            type: "GET",
                             success: function(result) {
-                                console.log(result);
+                                if(result.length > 0) {
+                                    sessionStorage.setItem("allCart",JSON.stringify(result));
+                                    var cartId = 1;
+                                    var obj = JSON.parse(sessionStorage.allCart);
+                                    if(obj) {
+                                        cartId = obj[obj.length - 1].id;
+                                    }
+                                    if (cartTasty.length > 0) {
+                                        for (var i = 0; i < cartTasty.length; i++) {
+                                            var unitPrice = cartTasty[i].quantity * cartTasty[i].amount;
+                                            $.ajax({
+                                                url: "http://localhost:8088/api/v1/cartItem",
+                                                type: "post",
+                                                data: JSON.stringify({ "cart_id" : cartId, "tasty_id": cartTasty[i].id, "quantities": cartTasty[i].quantity, "unit_price": unitPrice}),
+                                                contentType: 'application/json',
+                                                // dataType: "json",
+                                                // body : data,
+                                                success: function(result) {
+                                                    console.log(result);
+                                                    if (i === cartTasty.length) {
+                                                        alert('Đã thêm mới đơn hàng');
+                                                        window.location.href = 'index.html';
+                                                    }
+                                                },
+                                                error: function(error) {
+                                                    console.log(error);
+                                                }
+                                            });
+                                        }
+                                    }
+                                } else {
+                                }
                             },
                             error: function(error) {
                                 console.log(error);
                             }
                         });
+                    },
+                    error: function(error) {
+                        console.log(error);
                     }
-                }
+                });
+
             }
             // window.location.href = 'index.html';
         });

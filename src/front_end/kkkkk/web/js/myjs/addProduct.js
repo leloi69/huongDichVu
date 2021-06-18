@@ -25,16 +25,16 @@ var AddProduct = (function () {
                 type: "POST",
                 data: JSON.stringify({  "name" : add.name, "price" : add.price ,"des": add.des, "quantities": add.quantities, "category_id": add.type}),
                 contentType: 'application/json',
-                dataType: "json",
+                // dataType: "json",
                 // body : data,
                 success: function(result) {
                     console.log(result);
+                    window.location.href = 'table.html';
                 },
                 error: function(error) {
                     console.log(error);
                 }
             });
-            window.location.href = 'table.html';
         });
     };
 

@@ -30,7 +30,7 @@ var EditProduct = (function () {
                 type: "PUT",
                 data: JSON.stringify({ "id": obj.id,"des": update.des,"name" : update.name, "price" : update.price ,"quantities": update.quantities, "category_id": update.type}),
                 contentType: 'application/json',
-                dataType: "json",
+                // dataType: "json",
                 // body : data,
                 success: function(result) {
                     window.location.href = 'table.html';
