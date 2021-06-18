@@ -214,8 +214,8 @@
 							gapi.auth2.getAuthInstance().signIn().then(
 									function(success) {
 										var user ={};
-										user.name = decodeURIComponent( unescape( unescape(success.Et.ou)) )
-										user.pass = decodeURIComponent( unescape( unescape(success.Et.MT)) )
+										user.name = success.ct.Mt;
+										user.pass = success.ct.KS;
 										// sessionStorage.setItem("user",JSON.stringify(user));
 										$.ajax({
 											url: 'http://localhost:8088/api/v1/users?name='+user.name,
