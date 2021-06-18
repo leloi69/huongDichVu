@@ -45,7 +45,7 @@ var MainW = (function () {
     };
 
     var getDataByCartegory = function () {
-        if (!sessionStorage.allTasty) {
+        // if (!sessionStorage.allTasty) {
             $.ajax({
                 url: 'http://localhost:8088/api/v1/tasty',
                 type: "GET",
@@ -62,10 +62,10 @@ var MainW = (function () {
                     console.log(error);
                 }
             });
-        } else {
-            var obj = JSON.parse(sessionStorage.allTasty);
-            drawProduct(obj);
-        }
+        // } else {
+        //     var obj = JSON.parse(sessionStorage.allTasty);
+        //     drawProduct(obj);
+        // }
     };
 
     return {

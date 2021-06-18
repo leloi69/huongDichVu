@@ -45,7 +45,7 @@ var Candy = (function () {
     };
 
     var getDataByCartegory = function () {
-        if(!sessionStorage.tastyByCandy){
+        // if(!sessionStorage.tastyByCandy){
             $.ajax({
                 url: 'http://localhost:8088/api/v1/tasty?category_id=1',
                 type: "GET",
@@ -61,10 +61,10 @@ var Candy = (function () {
                     console.log(error);
                 }
             });
-        } else {
-            var obj = JSON.parse(sessionStorage.tastyByCandy);
-            drawData(obj);
-        }
+        // } else {
+        //     var obj = JSON.parse(sessionStorage.tastyByCandy);
+        //     drawData(obj);
+        // }
 
     };
 

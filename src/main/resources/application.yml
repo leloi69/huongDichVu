@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: banking-service
+    name: nhom9-service
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/created_at?useUnicode=true&characterEncoding=UTF-8
     username: root
