@@ -46,7 +46,7 @@ public class TastyController {
 
     @GetMapping                        //http://localhost:8088/api/v1/tasty
     @CrossOrigin(origins = "*")
-    ResponseEntity<?> getAllUser(){
+    ResponseEntity<?> getAllTasty(){
         return tastyService.getAllTasty();
     }
 }

@@ -23,13 +23,13 @@ public class TastyService extends BaseService{
         return ResponseEntity.ok(dtos);
     }
 
-    public ResponseEntity<?> findByIdCate(int id){                      //hoi ban nam beu
+    public ResponseEntity<?> findByIdCate(int id){
         List<Tasty> tasty = tastyRepository.findAllByCategoryId(id);
         List<TastyDTO> dtos = convertListTastyToDTOs(tasty);
         return ResponseEntity.ok(dtos);
     }
 
-    public ResponseEntity<?> getAllTasty(){                             //hoi ban nam beu: tra ve sai category id
+    public ResponseEntity<?> getAllTasty(){
         List<Tasty> tasty = tastyRepository.findAll();
         List<TastyDTO> dtos = convertListTastyToDTOs(tasty);
         return new ResponseEntity<>(dtos, HttpStatus.OK);
